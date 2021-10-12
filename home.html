@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="grid.css">
+
+    <style>
+
+         body{
+           background-color: rgb(55,54,71) ;
+         }
+
+         .header{
+          margin: auto;  
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: -webkit-linear-gradient(black ,  rgba(55, 54, 71));  
+         }
+
+         .header-a{
+           width: 80%;
+           text-align: center;
+          
+         }
+
+         .logo{
+          width: 8%;
+         }
+
+        .logo img{
+          width: 100% ;
+          }
+
+          .menu a{ 
+          box-sizing: border-box;
+          text-decoration: none;
+          color: rgba(231, 210, 243, 0.979);
+          font-family:Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: lighter;
+          font-size: 20px;
+           padding: 30px;
+          }
+
+        .banner{ 
+            background-color: rgb(55,54,71) ;
+            display: flex;
+            justify-content: center;
+            margin: 5px 0;
+            position: relative;
+            perspective: 1000px;
+            width: 100%;  
+        }
+
+        .front{
+          /* position: absolute;  */
+            backface-visibility: hidden;
+            transition: .8s;
+            width: 80%;
+        }
+
+         .back {  
+            position: absolute; 
+            backface-visibility: hidden;
+            transition: .8s;
+            width: 80%;    
+             }
+        
+          .front{
+           transform: rotateY(0deg);
+          }
+
+          .back{
+            transform: rotateY(180deg);
+          }
+
+          .banner:hover .front{
+            transform: rotateY(180deg);
+          }
+
+          .banner:hover .back{
+            transform: rotateY(0deg);
+          }
+
+          .banneer-two{
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+           align-items: center;
+           margin: auto;
+          }
+
+          .banner-left  ,.banner-right{
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap; 
+            margin-bottom: 50px;
+          }
+
+          .box{
+            width: 80px;
+            background: -webkit-linear-gradient(left  ,  rgba(55, 54, 71, 0.863),rgba(135, 144, 229, 0.363)); 
+            flex: 1 0 0;
+            padding: 20px;
+          
+          }
+
+          .box1{
+            width: 80px;
+            background: -webkit-linear-gradient(right  ,  rgba(55, 54, 71, 0.863),rgba(230, 166, 230, 0.411));
+            flex: 1 0 0;
+            padding: 20px;
+          
+          }
+
+          .box h2 , .box1 h2{
+            text-align: center;
+            color: rgb(223, 205, 236);
+            font-size: 30px;
+            font-family :Verdana, Geneva, Tahoma, sans-serif;
+          }
+
+          .box-cus{
+            text-align: center;
+            color: rgba(12, 9, 14, 0.74);
+            font-size: 26px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 50px;
+          }
+
+          .box-HP{
+            font-size: 22px;
+            text-align: center;
+            color: rgba(12, 9, 14, 0.74);
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 50px;
+            line-height: 30px;
+          }
+
+          .box1 h3{
+            text-align: center;
+            color: rgba(9, 11, 14, 0.74);
+            font-size: 22px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 30px;
+            margin-top: 30px;
+          }
+     
+          .alcohol{
+            width: 20%;        
+          }
+
+          .alcohol img {
+            width: 100%;
+            border-radius: 8px;
+	         box-shadow: 0 0 20px rgba(0, 0, 0, 0.37);
+          }
+
+          .divider{
+            width: 100%;
+            margin-bottom: 20px;
+          }
+
+          .divider img{
+            width: 100%;
+          }
+
+          .footer-wrap{
+            display: flex;
+            margin: auto;
+            background:  -webkit-linear-gradient( rgba(55, 54, 71, 0.863),black  );
+          
+          }
+
+          .footer{
+            width: 80%;
+            display: flex;
+            padding: 30px;
+            margin: auto;
+            
+          }
+
+          .open , .icon{
+          text-align: center;
+           width: 50%;
+           padding: 50px 0;
+
+          }
+
+      
+         
+          .icon img{
+            width: 18%;
+            
+          }
+
+          
+          .icon-txt {
+            color:rgb(223, 205, 236); 
+            font-size: 22px;
+            margin-bottom: 10px;
+          
+          }
+
+          .open h2{
+            color:rgb(223, 205, 236); 
+            font-size: 23px ;
+          }
+
+          .map{
+            display: flex;
+            margin-left: auto;
+            padding-right: 20px;
+          }
+          
+          .cc h5{
+            color: rgba(201, 165, 212, 0.822);
+            background-color:black ;
+            text-align: center;
+          }
+
+          .footer-logo{
+            display: flex;
+            justify-content: flex-start;
+
+          }
+
+          .footer-logo img{
+            width: 80%
+          }
+ 
+    </style>
+
+</head>
+<body>
+
+<div class="header">
+   <div class="header-a">
+  
+      <nav class="menu">
+          <a href="menu.html"> Menu </a>
+          <a href="about us.html"> About Us</a>
+          <a href="event.html">Events</a>
+          
+      <a href="home.html">  <img class="logo" src="logo3.png" alt=""> </a>
+         
+          <a href="delivery.html"> Delivery</a>
+          <a href="booking.html"> Booking</a>
+          <a href="account.html"> Account</a>
+      </nav>
+      </div>
+  </div>
+
+
+<!-- banner -->
+
+
+<div class="banner">
+
+    
+      <img src="背景.png" class="front" alt="">
+      <img src="背面.png" class="back" alt="">
+     
+</div> 
+
+<div class="divider">
+<img src="101.png" alt="">
+</div>
+
+<div class="banneer-two">
+
+   <div class="banner-left">
+     <div class="box"><h2>Special Cocktail </h2>
+     <h3 class="box-cus"> Customization , Just for you ❣ </h3>
+    
+    </div>
+    <div class="alcohol"><a href=""> <img src="a1.png" alt=""></a></div> 
+  </div>
+
+  <div class="banner-right">
+    <div class="alcohol"> <a href=""> <img src="a4.png" alt=""></a></div>
+     <div class="box1"><h2>Sleeping Beauty </h2>
+      <h3>
+      Drink it ! <br>
+      the alcohol concentration can make you a sleeping beauty,<br>
+      maybe the prince will by your side? haha... ت </h3></div>
+   </div>
+
+   <div class="banner-left">
+    <div class="box"><h2>Harry Potter</h2>
+    <h3 class="box-HP"> 
+      The butterbeer is popular in Harry Potter magic world ,<br>
+      smooth and refresh butterbeer in Wonderland!
+    </h3>
+    
+    </div>
+
+  <div class="alcohol" ><a href=""> <img src="a3.png" alt=""></a> </div> 
+ </div>
+
+ <div class="banner-right">
+   <div class="alcohol"> <a href=""><img src="a2.png" alt=""></a> </div>
+  <div class="box1"><h2>Cocktail Capsule</h2>
+   <h3>
+    Stay at home !
+    Enjoy DIY bartending easily. <br>
+   (Only for delivery)</h3></div>
+</div>
+ </div>
+
+
+<div class="footer-wrap">
+  <div class="footer">
+
+    <div class="footer-logo">
+      <img src="logo3.png" alt="">
+    </div>
+
+    
+  <div class="icon">
+    <h2 class="icon-txt">FOLLOW & CONTACT US</h2>
+    <a href=""><img src="icon1.png" alt=""></a>
+    <a href=""><img src="icon3.png" alt=""></a>
+    <a href=""><img src="icon2.png" alt=""></a>
+  </div>
+
+  <div class="open">
+    <h2>OPEN HOUR </h2> <br>
+    <h2>  2200 - 0400 </h2>
+
+  </div>
+
+  <div class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.3655705245637!2d121.56799401500594!3d25.02166498397814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aa4d99e41a1d%3A0xb8672b09721271a7!2zMTEw5Y-w5YyX5biC5L-h576p5Y2A5ZCz6IiI6KGXNTgz5be3MTDlvIQ!5e0!3m2!1szh-TW!2stw!4v1633870596086!5m2!1szh-TW!2stw" width="300" height="200" style="border: 1px" ; allowfullscreen="" loading="lazy"></iframe>
+</div>
+</div>
+
+
+</div>
+<div class="cc"> <h5>copyright © 2021 Wonderland</h5></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
