@@ -1,0 +1,191 @@
+.banner { 
+    background-color: rgb(55,54,71) ;
+}
+
+    .banner img {
+        width: 100%;
+    }
+
+.divider {
+    margin-bottom: 20px;
+}
+
+    .divider img {
+        width: 100%;
+    }
+
+.banneer-two {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+    .banneer-two .banner-left,
+    .banneer-two  .banner-right {
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        margin-bottom: 50px;
+    }
+
+    .banneer-two .alcohol {
+        width: 20%;
+    }
+
+        .banneer-two .alcohol img {
+            width: 100%;
+            border-radius: 6px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.37);
+        }
+
+
+        .banneer-two .box {
+            width: 80%;
+            background: -webkit-linear-gradient(left  ,  rgba(55, 54, 71, 0.863),rgba(135, 144, 229, 0.363)); 
+            flex: 1 0 0;
+            padding: 20px;
+            border-radius: 6px;
+        }
+
+        .banneer-two .box1 {
+            width: 80%;
+            background: -webkit-linear-gradient(right  ,  rgba(55, 54, 71, 0.863),rgba(230, 166, 230, 0.411));
+            flex: 1 0 0;
+            padding: 20px;
+            border-radius: 6px;
+        }
+
+            .banneer-two .box .title ,
+            .banneer-two .box1 .title {
+                font-size: 26px;
+                text-align: center;
+                color: rgb(223, 205, 236);
+                font-family :Verdana, Geneva, Tahoma, sans-serif;
+                margin-bottom: 20px;
+            }
+
+            .banneer-two .box1 h3 {
+                font-size: 20px;
+                line-height: 1.5;
+                text-align: center;
+                color: rgba(9, 11, 14, 0.74);
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+
+
+            .banneer-two .box .box-cus,
+            .banneer-two .box1 .box-cus {
+                text-align: center;
+                line-height: 100%;
+                color: rgba(12, 9, 14, 0.74);
+                font-size: 23px;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                margin-top: 50px;
+            }
+
+            .banneer-two .box .box-HP,
+            .banneer-two .box1 .box-HP {
+                font-size: 21px;
+                text-align: center;
+                color: rgba(12, 9, 14, 0.74);
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                margin-top: 35px;
+                line-height: 29px;
+            }
+
+@media (max-width: 991.5px) {
+
+    .banner {
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+
+    .banneer-two .alcohol {
+        width: 50%;
+    }
+
+        .banneer-two .alcohol img {
+            width: 100%;
+            border-radius: 6px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.37);
+        }
+
+    .banneer-two .box {
+        width: 500%;
+    }
+
+    .banneer-two .box1 {
+        width: 500%;
+    }
+}
+
+@media (max-width: 767.5px) {
+
+}
+
+
+
+
+
+
+ul, li {
+    list-style: none;
+}
+
+
+    .slider-wrap .slider {
+        width: 1050px;
+        height: 400px;
+        position: relative;
+        margin: 50px auto;
+    }
+
+        .slider-wrap .slider li {
+            position: absolute;
+        }
+
+            .slider-wrap .slider li img {
+                width: 100%;
+            }
+
+        .slider-wrap .slider .arrow-l,
+        .slider-wrap .slider .arrow-r {
+            position: absolute;
+            top: 0;
+            display: none;
+            width: 80px;
+            height: 400px;
+            background-size: 80px;
+            cursor: pointer;
+            opacity: 0.8;
+            z-index: 9;
+        }
+
+        .slider-wrap .arrows .arrow-right::after {
+            content: '';
+            width: 30px;
+            height: 30px;
+            border-top: 5px solid rgb(230, 224, 224);
+            border-right: 5px solid rgb(230, 224, 224);
+            transform: rotate(45deg);
+            position: absolute;
+            z-index: 10;
+            right:  120px;
+            bottom: 170px;
+        }
+
+        .slider-wrap .arrows .arrow-left::before {
+            content: '';
+            width: 30px;
+            height: 30px;
+            border-bottom: 5px solid rgb(230, 224, 224);
+            border-left: 5px solid rgb(230, 224, 224);
+            transform: rotate(45deg);
+            position: absolute;
+            z-index: 10;
+            left:  120px;
+            bottom: 170px;     
+        }

@@ -1,0 +1,67 @@
+.menuup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.item{
+   width: 22.5%;
+   margin: 1.25%;
+   font-size: 20px;
+   text-align: center;
+}
+
+
+.item img{
+     width: 100%;
+     vertical-align: bottom;
+} 
+
+.color{
+    background-color: rgb(189, 123, 147);
+    opacity:0.7;
+}
+
+ .color2{
+    background-color: rgb(190, 108, 159);
+    opacity:0.7;
+} 
+
+.color3{
+    background-color: rgb(85, 122, 192);
+    opacity:0.7;
+}
+
+.color4{
+    background-color: rgb(125, 133, 173);
+    opacity:0.7;
+}
+
+.item h2{
+    color: rgb(54, 55, 71);
+    
+}
+
+.item h3{
+    color: rgb(72, 76, 132);
+}
+
+.price{
+    font-size: 24px;
+    color: rgba(238, 237, 211, 0.753);
+    font-style:italic;
+    text-align: center;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+    margin-top: 30px;
+}
+.menu :nth-child(1) {
+    color: rgba(99, 90, 96, 0.664);
+  }
+
+  .menuimg{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
