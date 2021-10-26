@@ -24,51 +24,43 @@
           .booktxt{
             display: flex;
            margin-bottom: 50px;
-           justify-content: center;
-           align-items: center;
-           
-         
-          
-         
+           width: 80%;
           }
 
-          .bartender-img{
-           
-           width: 20%;
-           position: absolute;
-           z-index: 2;
-           left:   110px;
-            bottom: -300px;
-            
+          .absolute-img{
+              position: relative;
+          }
+
+           .bartender-img{
+           width: 30%;
+           position: absolute; 
+           z-index: 2; 
           }
 
            .bookingback{
-            width: 20%;
-            position: absolute;
-            z-index: 1;
-            left:   140px;
-            bottom: -260px;
+            width: 50%;
+            /* float: right; */
+            display: flex;
+         justify-content: end;
+            
+          
           }
-
+ 
           .bartender-img img{
               width: 100%;
           }
 
           .bookingback img{
               width: 100%;
-          }
+          } 
 
           
           .form{
 
               color: rgb(234, 199, 247);
-              display: flex;
-              flex-wrap: wrap;
               width: 400px;
-              border-radius: 4px;
-              margin: auto;
               flex-direction: column;
-              position: relative;
+              float: right;
             
           }
 
@@ -116,7 +108,7 @@
               
                <a href="delivery.html"> Delivery</a>
                <a href="booking.html"> Booking</a>
-               <a href="account.html"> Account</a>
+               <a href="lucky.html"> Lucky draw</a>
            </nav>
            </div>
        </div>
@@ -129,9 +121,10 @@
     
        <div class="booktxt">
 
-        
+             <div class="absolute-img" > 
        <div class="bartender-img"> <img src="booking.jpg" alt=""></div>
        <div class="bookingback"> <img src="bookingback.png" alt=""></div>
+             </div> 
 
        <div class="form">
            
@@ -192,7 +185,7 @@
 
 
     </div>
-    <div class="cc"> <h5>copyright © 2021 Wonderland</h5></div>
+    <div class="cc"> <h5>copyright © 2021 FangChing</h5></div>
 
     
     </body>

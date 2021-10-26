@@ -10,40 +10,39 @@
     <link rel="stylesheet" href="header-footer.css">
     <style>
 
-      
-
           .delivery{
             display: flex;
             justify-content: center;
             margin-bottom: 15px;  
-        
           }
 
           .menu :nth-child(5) {
             color: rgba(99, 90, 96, 0.664);
           }
 
-          .delivery-wrap{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 80%;
-            margin: 20px auto;
-
+          .howto{
+            color: rgb(190, 201, 144);
+            font-size: 18px;
+            line-height: 30px;        
+            width: 50%;
+            margin-bottom: 20px;
           }
 
-          .howto{
-            color: rgb(163, 164, 211);
-            font-size: 18px;
-            background: -webkit-linear-gradient( rgba(55, 54, 71, 0.863),rgba(68, 31, 64, 0.527));
-            line-height: 30px;
-            margin-left: auto;
-            width: 50%;
+          .howto span{
+            color:rgb(237, 240, 224) ;
+          }
+
+          .howto-wrap{
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            
           }
 
           .howto img{
-              width: 50%;
-              
+              width: 100%; 
+              box-shadow: -10px 10px 7px rgb(77, 76, 54);
+              border-radius:10px;     
           }
 
           .delivery-img{
@@ -51,34 +50,43 @@
               justify-content: center;
               align-items: center;
               margin-top: 15px;
-
             }
 
-          .form{
-              
+            .cheers form , .cheers textarea {
+               text-align:start; 
               color: rgb(234, 199, 247);
               display: flex;
               flex-wrap: wrap;
               width: 400px;
-              border-radius: 4px;
-              margin-left: 30px;
+              border-radius: 4px; 
               flex-direction: column;
           }
 
-          .form input ,textarea, select{
+          .cheers{     
+            width: 80%;
+          }
+
+          form{
+            margin-left: auto;
+          }
+
+          .cheers input , .cheers textarea, .cheers select{
             border: 2px solid rgb(82, 28, 77);
             border-radius: 4px;
             margin: 20px;
             background-color: rgba(248, 242, 253, 0.849);
           }
 
-          .form input, select{
+          .cheers form input, select{
               height: 20px;
           }
 
-          textarea{
+        textarea{
               resize: none;
-             
+          }
+
+          .cheers img{
+            width: 80%;
           }
 
           .diy{
@@ -86,11 +94,7 @@
               justify-content: center;
               align-items: center;
               margin:30px auto;
-              width: 80%;
-              
-          }
-          .diy img{
-              width: 70%;
+              width: 80%; 
           }
 
           .but{
@@ -99,37 +103,92 @@
 
           .but input{
             width:80px ;
-             height: 30px;
-             
+            height: 30px;          
           }
 
-          .arrow{
-            position: relative;
+            .detail{
+              display: flex;
+             justify-content: center;
+
+            }
+
+            .coverflow{
+              width: 50% ;
+              position: relative; 
+            }
+
+            .coverflow a{
+              display: block;
+              position: absolute; 
+              top: 20px;;
+              left: 190px;
+              opacity: 0;
+              filter: alpha(opacity=0);
+              /*當圖片數量增加，影片長度需更改，變為5s*圖片數量*/
+              -webkit-animation: silder 20s linear infinite;
+                      animation: silder 20s linear infinite;
+            }
+            .coverflow img{
+              width: 100%;
+            }
+
+          /*動畫關鍵影格*/
+            @-webkit-keyframes silder {
+                3% {
+                    opacity: 1;
+                    filter: alpha(opacity=100);
+                }
+                27% {
+                    opacity: 1;
+                    filter: alpha(opacity=100);
+                }
+                30% {
+                    opacity: 0;
+                    filter: alpha(opacity=0);
+                }
+            }
+            @keyframes silder {
+                3% {
+                    opacity: 1;
+                    filter: alpha(opacity=100);
+                }
+                27% {
+                    opacity: 1;
+                    filter: alpha(opacity=100);
+                }
+                30% {
+                    opacity: 0;
+                    filter: alpha(opacity=0);
+                }
+            }
+
+          /*每個圖片各延遲5秒*/
+          .coverflow>a:nth-child(4) {
+              -webkit-animation-delay: 15s;
+                      animation-delay: 15s;             
+            }
+
+            .coverflow>a:nth-child(3) {
+              -webkit-animation-delay: 10s;
+                      animation-delay: 10s;             
+            }
+
+            .coverflow>a:nth-child(2) {
+              -webkit-animation-delay: 5s;
+                      animation-delay: 5s;
+            }
+
+            .coverflow>a:nth-child(1) {
+              -webkit-animation-delay: 0s;
+                      animation-delay: 0s;    
+            }
+          /*滑入時停止播放*/
+            .coverflow:hover>a{
+              -webkit-animation-play-state: paused;
+                      animation-play-state: paused;
           }
 
-        .arrow::after {
-          content: '';
-          width: 30px;
-          height: 30px;
-          border-top: 5px solid rgb(230, 224, 224);
-          border-right: 5px solid rgb(230, 224, 224);
-          transform: rotate(45deg);
-          position: absolute;
-          right:  -350px;
-      
-        }
-
-        .arrowleft::before {
-          content: '';
-          width: 30px;
-          height: 30px;
-          border-bottom: 5px solid rgb(230, 224, 224);
-          border-left: 5px solid rgb(230, 224, 224);
-          transform: rotate(45deg);
-          position: absolute;
-          right:  60px;
-          
-        }
+        
     
          
     </style>
@@ -147,7 +206,7 @@
           
            <a href="delivery.html"> Delivery</a>
            <a href="booking.html"> Booking</a>
-           <a href="account.html"> Account</a>
+           <a href="lucky.html"> Lucky draw</a>
        </nav>
        </div>
    </div>
@@ -156,13 +215,11 @@
         <img src="delivery1.png" alt="">
        </div>
 
-       <div class="diy">
-           <img src="diy.png" alt="">
-       </div>
-
-       <div class="delivery-wrap" >
-       <div class="howto">
-
+      
+<div class="howto-wrap">
+       <div class="howto"> 
+         <img src="diy.png" alt="">
+       <br>
         How to Make a Wonderland Cocktail: <br>
         1. Put the content in the capsule into a glass <br>
         2. Add alcohol base; use the capsule as a measuring cup <br>
@@ -170,14 +227,22 @@
         3. Stir the drink properly (certain flavors may be hard to stir)<br>
         4. Add ice cubes<br>
         5. Add sparkling water (4 cups: 80 ml)
-        <div class="delivery-img">
-
-         <div class="arrow arrowleft"></div>
-        <img src="mm3.png" alt="">
-        </div>
+        <br>
+       <span>  Now , Order and enjoy it !</span>
        </div>
+  </div> 
 
-       <div class="form">
+  <div class="cheers">
+          <div class="coverflow">
+            <a href="menu.html"><img src="mm3.png"></a>
+            <a href="menu.html"><img src="mm2.png"></a>
+            <a href="menu.html"><img src="mm1.png"></a>
+            <a href="menu.html"><img src="mm4.png"></a>
+
+        </div>
+   
+
+      
            <form action="">
 
             <label for="">Date<input type="date"> </label> <br>
@@ -200,7 +265,6 @@
                 <label for="">E-mail<input type="email"></label><br>
                 
 
-         </form>
 
          <p> Remark </p>
            <textarea name="" id="" cols="17" rows="8" placeholder="Tell us other needs ☺">
@@ -209,9 +273,11 @@
             <br>
             <div class="but">
         <label for=""><input type="button" value="Submit"> </label>
+         </form>
            </div>
        </div>
 </div>
+
 
 <div class="footer-wrap">
     <div class="footer">
@@ -234,20 +300,17 @@
   
     </div>
   
-    <!-- <div class="footer-logo">
-    <img src="logo3.png" alt="">
-  
-    </div> -->
   
     <div class="map">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.3655705245637!2d121.56799401500594!3d25.02166498397814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aa4d99e41a1d%3A0xb8672b09721271a7!2zMTEw5Y-w5YyX5biC5L-h576p5Y2A5ZCz6IiI6KGXNTgz5be3MTDlvIQ!5e0!3m2!1szh-TW!2stw!4v1633870596086!5m2!1szh-TW!2stw" width="300" height="200" style="border: 1px" ; allowfullscreen="" loading="lazy"></iframe>
   </div>
-  </div>
-  
-  
-  </div>
-  <div class="cc"> <h5>copyright © 2021 Wonderland</h5></div>
 
-    
+  </div>
+  
+  
+  </div>
+  <div class="cc"> <h5>copyright © 2021 FangChing</h5></div>
+
+
 </body>
 </html>

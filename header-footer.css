@@ -32,8 +32,15 @@ body{
    font-family:Verdana, Geneva, Tahoma, sans-serif;
    font-weight: lighter;
    font-size: 20px;
-    padding: 30px;
-   }
+    padding: 28px;
+ }
+   .menu a:hover{
+      color: #b17ed4; 
+      position: relative; 
+      top: 1px;
+      left: 1px;
+      }
+  
 /* footer */
 
 .footer-wrap{
@@ -90,7 +97,7 @@ body{
 
    .footer-logo{
      display: flex;
-     width: 23%;
+     width: 27%;
      height: 23%;
      justify-content: flex-start;
      margin: 25px 15px;
