@@ -1,0 +1,70 @@
+
+          .aboutus{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;  
+          }
+
+          .aboutus img{
+              width: 80%;
+              max-width: 1200px;
+          }
+
+          .menu :nth-child(2) {
+            color: rgba(99, 90, 96, 0.664);
+          }
+
+          .about-wrap{
+             margin: auto;
+             text-align: center;
+             display: flex;
+             width: 80%;
+          }
+
+          .aboutimg{
+            text-align: left;
+          }
+
+          .aboutimg img{
+           width: 80%;
+          }
+
+          .about-txt{
+              width: 100%;
+              color: rgba(137, 171, 243, 0.815);
+              font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin: auto;
+          }
+        
+          .about-txt span{
+              line-height: 2;
+              font-size: 25px;
+            background: linear-gradient(to top, #6c75ac, #f4f5f7);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+             
+          }
+
+          .about-txt h3{
+              line-height: 1.5;
+              font-size: 22px;
+              text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+          }
+
+          .about-txt h4{
+              font-weight: bolder; 
+              line-height: 1.5;
+              font-size: 22px;
+              background: linear-gradient(to top, #6c75ac, #f4f5f7);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+             text-shadow: 0px 0px 4px rgba(255,255,255,0.7);
+          }
+
+          @media (max-width: 1200px) {
+            .slider-wrap{
+                display: none;
+            }
+         }

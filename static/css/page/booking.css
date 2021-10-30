@@ -1,0 +1,80 @@
+.booking-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    width: 80%;
+    margin: auto;
+  }
+
+  .booking-img .booking-img img{
+    max-width: 1200px;
+    width: 100%;
+  }
+
+
+.booktxt{
+ display: flex;
+ margin-bottom: 50px;
+ width: 80%;
+}
+
+.booktxt .absolute-img{
+    position: relative;
+    margin-left: auto;
+}
+
+.booktxt .absolute-img .bartender-img{
+ width: 48%;
+ position: absolute; 
+ z-index: 2; 
+}
+
+.booktxt .absolute-img .bookingback{
+  width: 50%;
+  display: flex;
+  
+}
+
+.booktxt .absolute-img .bartender-img img{
+    width: 100%;
+}
+
+.booktxt .absolute-img .bookingback img{
+    width: 100%;
+} 
+
+/* from */
+
+.form{
+    color: rgb(234, 199, 247);
+    width: 400px;
+    flex-direction: column;
+    float: right;
+}
+
+.form input {
+  border: 2px solid rgb(82, 28, 77);
+  border-radius: 4px;
+  margin: 20px;
+  background-color: rgba(248, 242, 253, 0.849);
+}
+
+.form input{
+    height: 20px;
+}
+
+
+.but{
+    margin: auto;
+}
+
+.but input{
+  width:80px ;
+   height: 30px;
+   
+}
+
+.menu :nth-child(6) {
+  color: rgba(99, 90, 96, 0.664);
+}

@@ -1,0 +1,192 @@
+.delivery{
+    display: flex;
+    width: 80%; 
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 15px; 
+    
+  }
+
+  
+.delivery img{
+    width: 100%;
+    max-width: 1200px;
+}
+
+  .menu :nth-child(5) {
+    color: rgba(99, 90, 96, 0.664);
+  }
+
+  .howto{
+    color: rgb(190, 201, 144);
+    font-size: 18px;
+    line-height: 30px;        
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .howto span{
+    color:rgb(237, 240, 224) ;
+  }
+
+  .howto-wrap{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .howto img{
+      width: 100%; 
+      box-shadow: -10px 10px 7px rgb(77, 76, 54);
+      border-radius:10px;     
+  }
+
+
+    .cheers form , .cheers textarea {
+       text-align:start; 
+      color: rgb(234, 199, 247);
+      display: flex;
+      flex-wrap: wrap;
+      width: 400px;
+      border-radius: 4px; 
+      flex-direction: column;
+  }
+
+  .cheers{     
+    width: 80%;
+  }
+
+  form{
+    margin-left: auto;
+  }
+
+  .cheers input , .cheers textarea, .cheers select{
+    border: 2px solid rgb(82, 28, 77);
+    border-radius: 4px;
+    margin: 20px;
+    background-color: rgba(248, 242, 253, 0.849);
+  }
+
+  .cheers form input, select{
+      height: 20px;
+  }
+
+textarea{
+      resize: none;
+  }
+
+  .cheers img{
+    width: 80%;
+  }
+
+  .diy{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin:30px auto;
+      width: 80%; 
+  }
+
+  .but{
+      margin: auto;
+  }
+
+  .but input{
+    width:80px ;
+    height: 30px;          
+  }
+
+    .detail{
+      display: flex;
+     justify-content: center;
+
+    }
+
+    .coverflow{
+      width: 50% ;
+      position: relative; 
+    }
+
+    .coverflow a{
+      display: block;
+      position: absolute; 
+      top: 20px;
+      left: 190px;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      /*當圖片數量增加，影片長度需更改，變為5s*圖片數量*/
+      -webkit-animation: silder 20s linear infinite;
+              animation: silder 20s linear infinite;
+    }
+    .coverflow img{
+      width: 100%;
+    }
+
+  /*動畫關鍵影格*/
+    @-webkit-keyframes silder {
+        3% {
+            opacity: 1;
+            filter: alpha(opacity=100);
+        }
+        27% {
+            opacity: 1;
+            filter: alpha(opacity=100);
+        }
+        30% {
+            opacity: 0;
+            filter: alpha(opacity=0);
+        }
+    }
+    @keyframes silder {
+        3% {
+            opacity: 1;
+            filter: alpha(opacity=100);
+        }
+        27% {
+            opacity: 1;
+            filter: alpha(opacity=100);
+        }
+        30% {
+            opacity: 0;
+            filter: alpha(opacity=0);
+        }
+    }
+
+  /*每個圖片各延遲5秒*/
+  .coverflow>a:nth-child(4) {
+      -webkit-animation-delay: 15s;
+              animation-delay: 15s;             
+    }
+
+    .coverflow>a:nth-child(3) {
+      -webkit-animation-delay: 10s;
+              animation-delay: 10s;             
+    }
+
+    .coverflow>a:nth-child(2) {
+      -webkit-animation-delay: 5s;
+              animation-delay: 5s;
+    }
+
+    .coverflow>a:nth-child(1) {
+      -webkit-animation-delay: 0s;
+              animation-delay: 0s;    
+    }
+  /*滑入時停止播放*/
+    .coverflow:hover>a{
+      -webkit-animation-play-state: paused;
+              animation-play-state: paused;
+  }
+
+  @media (max-width: 1116px) {
+    .howto{
+        width: 60%;
+        }
+       } 
+
+  @media (max-width: 1035px) {
+    .coverflow{
+    display: none;    
+        }
+       }  

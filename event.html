@@ -5,158 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="grid.css">
-    <link rel="stylesheet" href="header-footer.css">
-    <style>
-       .menu :nth-child(3) {
-            color: rgba(99, 90, 96, 0.664);
-          }
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="./static/css/page/events.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
 
-        .events-wrap{
-            width: 80%;
-            margin: auto;
-            justify-content: center;
-          
-        }
-
-        .events {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            /* justify-content: center; */
-            padding: 20px ;
-            background-color: rgb(71, 62, 71);
-        }
-
-        .events-reverse {
-            flex-direction: row-reverse;
-            background-color: rgb(78, 73, 78);
-        } 
-
-        .eventsimg{
-            width: 40%;
-            background-color: rgb(80, 78, 79);
-            display: flex;
-        }
-
-
-        .events-wrap img{
-            width: 100%;
-            opacity: 0.7;
-        }
-
-        .eventstxt{
-            display: flex ;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            margin: auto;
-            line-height: 30px;
-            font-size: 20px;
-            color: rgb(27, 15, 25);
-        }
-
-        
-        .eventstxt h3{
-            color: rgba(156, 148, 172, 0.966);
-            margin: 0 auto 15px auto;
-            font-size: 22px;
-            font-style:oblique ;
-        }
-        
-        .eventsbanner{
-            display: flex;
-            justify-content: center;
-            margin-bottom: 15px;  
-        }
-
-        table , caption {
-           text-align: center;
-            margin-left: auto;
-            border-collapse:collapse;
-            font-size: 16px;
-            color:#fff;
-            border-radius: 10px;
-        }
-
-        table{
-            width: 10%;
-            margin: auto;
-            box-shadow: -10px 8px 15px rgb(48, 47, 47);
-        }
-
-    
-
-        caption{
-            margin-bottom: 10px;
-            font-style:italic;
-        }
-
-
-        th { 
-            background-color: #16091f;
-            padding:5px;
-           
-           
-         } 
-
-         td{ 
-            background-color: #39233be5;
-            padding:8px;    
-         } 
-       
-          .happyhour{
-             width: 35%;
-             margin: auto;
-         } 
-
-         .calendar{
-             /* width: 100%; */
-             margin: auto;
-         }
-
-
-
-         .happyhour-wrap{
-             display: flex;
-             margin: auto;
-             justify-content: center;
-         }
-
-       
-
-         
-
-
-
-
-
-    </style>
 </head>
 
 <body>
-     <div class="header">
-        <div class="header-a">
-       
-           <nav class="menu">
-               <a href="menu.html"> Menu </a>
-               <a href="about us.html"> About Us</a>
-               <a href="event.html">Events</a>
-               
-           <a href="home.html">  <img class="logo" src="logo3.png" alt=""> </a>
-              
-               <a href="delivery.html"> Delivery</a>
-               <a href="booking.html"> Booking</a>
-               <a href="lucky.html"> Lucky draw</a>
-           </nav>
-           </div>
-       </div>
-<!-- header -->
+    <div w3-include-html="./header.html"></div>
 
 <div class="eventsbanner">
-  <img src="events.png" alt="">
+  <img src="./static/images/events.png" alt="">
 </div>
 
 <!-- Monthly calendar -->
@@ -166,7 +25,7 @@
     <div class="happyhour-wrap">
 
     <div class="happyhour">
-        <img src="event happy.png" alt="">
+        <img src="./static/images/event happy.png" alt="">
     </div>
 
 <div class="calendar">
@@ -219,21 +78,15 @@
 </div>
 </div>
 
-
-
-
-
-
-
       <div class="events">
         
-    <div class="eventsimg"> <img src="e1.JPG" alt=""> </div>
+    <div class="eventsimg"> <img src="./static/images/e1.JPG" alt=""> </div>
         <div class="eventstxt">
         <h3>
             Karaoke Night
         </h3>
         <p>
-            Just buy a cocktail , sing karaoke for free ! <br>
+            Just buy a cocktail,sing karaoke for free ! <br>
             
            <span> 
             When: 
@@ -246,13 +99,13 @@
 
     <div class="events events-reverse">
          
-    <div class="eventsimg"> <img src="e2.JPG" alt=""> </div>
+    <div class="eventsimg"> <img src="./static/images/e2.JPG" alt=""> </div>
         <div class="eventstxt">
         <h3>
             Happy Hour
         </h3>
         <p>
-            Only NT$999, unlimited cocktails !<br>
+            Only NT$999,unlimited cocktails !<br>
            <span> When: 
             Weekdays between 5-7pm.</span>
         </p>
@@ -262,7 +115,7 @@
 
      <div class="events">
          
-        <div class="eventsimg"> <img src="e3.JPG" alt=""> </div>
+        <div class="eventsimg"> <img src="./static/images/e3.JPG" alt=""> </div>
             <div class="eventstxt">
             <h3> 
                 Sunday Brunch
@@ -276,7 +129,7 @@
         </div>
 
         <div class="events events-reverse">
-             <div class="eventsimg"> <img src="e4.JPG" alt=""> </div>
+             <div class="eventsimg"> <img src="./static/images/e4.JPG" alt=""> </div>
         <div class="eventstxt">
         <h3>
             Buy One Get One Free 
@@ -295,51 +148,52 @@
 </div>
 
 
-
-
-
-
-
-
-
-
-
-       
-
        <!-- footer -->
 
        <div class="footer-wrap">
+
         <div class="footer">
-      
-          <div class="footer-logo">
-            <img src="logo3.png" alt="">
-          </div>
-      
-          
-        <div class="icon">
-          <h2 class="icon-txt">FOLLOW & CONTACT US</h2>
-          <a href=""><img src="icon1.png" alt=""></a>
-          <a href=""><img src="icon3.png" alt=""></a>
-          <a href=""><img src="icon2.png" alt=""></a>
+    
+            <div class="footer-logo">
+                <img src="./static/images/logo3.png" alt="">
+            </div>
+    
+    
+            <div class="icon">
+                <h2 class="icon-txt">FOLLOW & CONTACT US</h2>
+                <a href=""><img src="./static/icons/icon1.png" alt=""></a>
+                <a href=""><img src="./static/icons/icon3.png" alt=""></a>
+                <a href=""><img src="./static/icons/icon2.png" alt=""></a>
+            </div>
+    
+            <div class="open">
+                <h2>OPEN HOUR </h2> <br>
+                <h2> 2200 - 0400 </h2>
+            </div>
+    
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.3655705245637!2d121.56799401500594!3d25.02166498397814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aa4d99e41a1d%3A0xb8672b09721271a7!2zMTEw5Y-w5YyX5biC5L-h576p5Y2A5ZCz6IiI6KGXNTgz5be3MTDlvIQ!5e0!3m2!1szh-TW!2stw!4v1633870596086!5m2!1szh-TW!2stw"
+                    width="300" height="200" style="border: 1px" ; allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+    
         </div>
-      
-        <div class="open">
-          <h2>OPEN HOUR </h2> <br>
-          <h2>  2200 - 0400 </h2>
-      
+    
+        
+        <div class="cc">
+            <h5>copyright © 2021Fang Ching</h5>
         </div>
-      
-        <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.3655705245637!2d121.56799401500594!3d25.02166498397814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aa4d99e41a1d%3A0xb8672b09721271a7!2zMTEw5Y-w5YyX5biC5L-h576p5Y2A5ZCz6IiI6KGXNTgz5be3MTDlvIQ!5e0!3m2!1szh-TW!2stw!4v1633870596086!5m2!1szh-TW!2stw" width="300" height="200" style="border: 1px" ; allowfullscreen="" loading="lazy"></iframe>
-      </div>
-      </div>
-      
-      
-      </div>
-      <div class="cc"> <h5>copyright © 2021 FangChing</h5></div>
-
-
-
-
-</body>
-</html>
+    
+    </div> 
+    
+    
+    <script>
+        w3.includeHTML();
+    </script>
+    
+    
+    
+    </body>
+    
+    </html>

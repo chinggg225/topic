@@ -7,15 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./static/css/index.css">
-    <link rel="stylesheet" href="./static/css/page/home.css">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 
 <body>
     
-    <div w3-include-html="./header.html"></div>
+    <div w3-include-html="./test.html"></div>
 
-    
+    <div class="header">
+        <div class="header-a">
+
+            <nav class="menu">
+                <a href="menu.html"> Menu </a>
+                <a href="about us.html"> About Us</a>
+                <a href="event.html">Events</a>
+
+                <a href="home.html"> <img class="logo" src="./static/images/logo3.png" alt=""> </a>
+
+                <a href="delivery.html"> Delivery</a>
+                <a href="booking.html"> Booking</a>
+                <a href="lucky.html"> Lucky draw</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- banner -->
     <div class="container">
         <div class="banner">
             <img src="./static/images/bg.png" class="front" alt="">
@@ -92,8 +108,10 @@
                 </ul>
                 <div class="arrows">
                     <i class="arrow arrow-l"></i>
-                    <div class="arrow-right arrow-left"></div>       
+                    <div class="arrow-right arrow-left"></div>
+                    <!-- <span class="arrow-right"> < </span> -->
                     <i class="arrow arrow-r"></i>
+                    <!-- <span class="arrow-left"> > </span> -->
                 </div>
             </div>
         </section>
@@ -130,14 +148,13 @@
 
         </div>
 
-        
+
+
         <div class="cc">
-            <h5>copyright © 2021Fang Ching</h5>
+            <h5>copyright © 2021 Wonderland</h5>
         </div>
 
-    </div> 
-
-    
+    </div>
     <script>
         w3.includeHTML();
     </script>

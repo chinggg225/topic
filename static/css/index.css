@@ -1,0 +1,25 @@
+@import './reset.css';
+@import './header-footer.css';
+
+/* page */
+
+/* @import '/static/css/page/home.css';
+@import '/static/css/page/menu.css'; */
+
+
+/* grid */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+@media (max-width: 991.5px) {
+    .container {
+        padding: 0 16px;
+    }
+}

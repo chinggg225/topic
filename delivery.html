@@ -5,220 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="grid.css">
-    <link rel="stylesheet" href="header-footer.css">
-    <style>
-
-          .delivery{
-            display: flex;
-            justify-content: center;
-            margin-bottom: 15px;  
-          }
-
-          .menu :nth-child(5) {
-            color: rgba(99, 90, 96, 0.664);
-          }
-
-          .howto{
-            color: rgb(190, 201, 144);
-            font-size: 18px;
-            line-height: 30px;        
-            width: 50%;
-            margin-bottom: 20px;
-          }
-
-          .howto span{
-            color:rgb(237, 240, 224) ;
-          }
-
-          .howto-wrap{
-            margin: auto;
-            display: flex;
-            justify-content: center;
-            
-          }
-
-          .howto img{
-              width: 100%; 
-              box-shadow: -10px 10px 7px rgb(77, 76, 54);
-              border-radius:10px;     
-          }
-
-          .delivery-img{
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              margin-top: 15px;
-            }
-
-            .cheers form , .cheers textarea {
-               text-align:start; 
-              color: rgb(234, 199, 247);
-              display: flex;
-              flex-wrap: wrap;
-              width: 400px;
-              border-radius: 4px; 
-              flex-direction: column;
-          }
-
-          .cheers{     
-            width: 80%;
-          }
-
-          form{
-            margin-left: auto;
-          }
-
-          .cheers input , .cheers textarea, .cheers select{
-            border: 2px solid rgb(82, 28, 77);
-            border-radius: 4px;
-            margin: 20px;
-            background-color: rgba(248, 242, 253, 0.849);
-          }
-
-          .cheers form input, select{
-              height: 20px;
-          }
-
-        textarea{
-              resize: none;
-          }
-
-          .cheers img{
-            width: 80%;
-          }
-
-          .diy{
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              margin:30px auto;
-              width: 80%; 
-          }
-
-          .but{
-              margin: auto;
-          }
-
-          .but input{
-            width:80px ;
-            height: 30px;          
-          }
-
-            .detail{
-              display: flex;
-             justify-content: center;
-
-            }
-
-            .coverflow{
-              width: 50% ;
-              position: relative; 
-            }
-
-            .coverflow a{
-              display: block;
-              position: absolute; 
-              top: 20px;;
-              left: 190px;
-              opacity: 0;
-              filter: alpha(opacity=0);
-              /*當圖片數量增加，影片長度需更改，變為5s*圖片數量*/
-              -webkit-animation: silder 20s linear infinite;
-                      animation: silder 20s linear infinite;
-            }
-            .coverflow img{
-              width: 100%;
-            }
-
-          /*動畫關鍵影格*/
-            @-webkit-keyframes silder {
-                3% {
-                    opacity: 1;
-                    filter: alpha(opacity=100);
-                }
-                27% {
-                    opacity: 1;
-                    filter: alpha(opacity=100);
-                }
-                30% {
-                    opacity: 0;
-                    filter: alpha(opacity=0);
-                }
-            }
-            @keyframes silder {
-                3% {
-                    opacity: 1;
-                    filter: alpha(opacity=100);
-                }
-                27% {
-                    opacity: 1;
-                    filter: alpha(opacity=100);
-                }
-                30% {
-                    opacity: 0;
-                    filter: alpha(opacity=0);
-                }
-            }
-
-          /*每個圖片各延遲5秒*/
-          .coverflow>a:nth-child(4) {
-              -webkit-animation-delay: 15s;
-                      animation-delay: 15s;             
-            }
-
-            .coverflow>a:nth-child(3) {
-              -webkit-animation-delay: 10s;
-                      animation-delay: 10s;             
-            }
-
-            .coverflow>a:nth-child(2) {
-              -webkit-animation-delay: 5s;
-                      animation-delay: 5s;
-            }
-
-            .coverflow>a:nth-child(1) {
-              -webkit-animation-delay: 0s;
-                      animation-delay: 0s;    
-            }
-          /*滑入時停止播放*/
-            .coverflow:hover>a{
-              -webkit-animation-play-state: paused;
-                      animation-play-state: paused;
-          }
-
-        
-    
-         
-    </style>
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="./static/css/page/delivery.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 <body>
-  <div class="header">
-    <div class="header-a">
-   
-       <nav class="menu">
-           <a href="menu.html"> Menu </a>
-           <a href="about us.html"> About Us</a>
-           <a href="event.html">Events</a>
-           
-       <a href="home.html">  <img class="logo" src="logo3.png" alt=""> </a>
-          
-           <a href="delivery.html"> Delivery</a>
-           <a href="booking.html"> Booking</a>
-           <a href="lucky.html"> Lucky draw</a>
-       </nav>
-       </div>
-   </div>
+  <div w3-include-html="./header.html"></div>
 
        <div class="delivery">
-        <img src="delivery1.png" alt="">
+        <img src="./static/images/delivery1.png" alt="">
        </div>
 
       
 <div class="howto-wrap">
        <div class="howto"> 
-         <img src="diy.png" alt="">
+         <img src="./static/images/diy.png" alt="">
        <br>
         How to Make a Wonderland Cocktail: <br>
         1. Put the content in the capsule into a glass <br>
@@ -234,10 +35,10 @@
 
   <div class="cheers">
           <div class="coverflow">
-            <a href="menu.html"><img src="mm3.png"></a>
-            <a href="menu.html"><img src="mm2.png"></a>
-            <a href="menu.html"><img src="mm1.png"></a>
-            <a href="menu.html"><img src="mm4.png"></a>
+            <a href="menu.html"><img src="./static/images/mm3.png"></a>
+            <a href="menu.html"><img src="./static/images/mm2.png"></a>
+            <a href="menu.html"><img src="./static/images/mm1.png"></a>
+            <a href="menu.html"><img src="./static/images/mm4.png"></a>
 
         </div>
    
@@ -280,37 +81,49 @@
 
 
 <div class="footer-wrap">
-    <div class="footer">
-  
+
+  <div class="footer">
+
       <div class="footer-logo">
-        <img src="logo3.png" alt="">
+          <img src="./static/images/logo3.png" alt="">
       </div>
-  
-      
-    <div class="icon">
-      <h2 class="icon-txt">FOLLOW & CONTACT US</h2>
-      <a href=""><img src="icon1.png" alt=""></a>
-      <a href=""><img src="icon3.png" alt=""></a>
-      <a href=""><img src="icon2.png" alt=""></a>
-    </div>
-  
-    <div class="open">
-      <h2>OPEN HOUR </h2> <br>
-      <h2>  2200 - 0400 </h2>
-  
-    </div>
-  
-  
-    <div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.3655705245637!2d121.56799401500594!3d25.02166498397814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aa4d99e41a1d%3A0xb8672b09721271a7!2zMTEw5Y-w5YyX5biC5L-h576p5Y2A5ZCz6IiI6KGXNTgz5be3MTDlvIQ!5e0!3m2!1szh-TW!2stw!4v1633870596086!5m2!1szh-TW!2stw" width="300" height="200" style="border: 1px" ; allowfullscreen="" loading="lazy"></iframe>
-  </div>
+
+
+      <div class="icon">
+          <h2 class="icon-txt">FOLLOW & CONTACT US</h2>
+          <a href=""><img src="./static/icons/icon1.png" alt=""></a>
+          <a href=""><img src="./static/icons/icon3.png" alt=""></a>
+          <a href=""><img src="./static/icons/icon2.png" alt=""></a>
+      </div>
+
+      <div class="open">
+          <h2>OPEN HOUR </h2> <br>
+          <h2> 2200 - 0400 </h2>
+      </div>
+
+      <div class="map">
+          <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.3655705245637!2d121.56799401500594!3d25.02166498397814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aa4d99e41a1d%3A0xb8672b09721271a7!2zMTEw5Y-w5YyX5biC5L-h576p5Y2A5ZCz6IiI6KGXNTgz5be3MTDlvIQ!5e0!3m2!1szh-TW!2stw!4v1633870596086!5m2!1szh-TW!2stw"
+              width="300" height="200" style="border: 1px" ; allowfullscreen="" loading="lazy">
+          </iframe>
+      </div>
 
   </div>
+
   
-  
+  <div class="cc">
+      <h5>copyright © 2021Fang Ching</h5>
   </div>
-  <div class="cc"> <h5>copyright © 2021 FangChing</h5></div>
+
+</div> 
+
+
+<script>
+  w3.includeHTML();
+</script>
+
 
 
 </body>
+
 </html>
