@@ -40,26 +40,26 @@ h2{
 
 .menu-wrap .item .color{
     background-color: rgb(189, 123, 147);
-    opacity:0.7; 
+    opacity:0.5; 
     flex-grow: 1;
 }
     
 .menu-wrap .item .color2{
     background-color: rgba(190, 118, 127, 0.945);
-    opacity:0.7;
+    opacity:0.5;
     flex-grow: 1;
 
 } 
 
 .menu-wrap .item .color3{
     background-color: rgb(85, 122, 192);
-    opacity:0.7;
+    opacity:0.5;
     flex-grow: 1;
 }
 
 .menu-wrap .item .color4{
     background-color: rgb(125, 133, 173);
-    opacity:0.7;
+    opacity:0.5;
     flex-grow: 1;
 }
 
