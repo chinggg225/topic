@@ -7,7 +7,7 @@
     margin: auto;
   }
 
-  .booking-img .booking-img img{
+.booking-img img{
     max-width: 1200px;
     width: 100%;
   }
@@ -15,34 +15,23 @@
 
 .booktxt{
  display: flex;
- margin-bottom: 50px;
  width: 80%;
+ justify-content: center;
+ align-items: center;
+ margin: auto;
 }
 
-.booktxt .absolute-img{
-    position: relative;
-    margin-left: auto;
+.booktxt img{
+  width: 100%;
+  border-radius: 10px;
+  opacity: 0.7;
+ 
 }
 
-.booktxt .absolute-img .bartender-img{
- width: 48%;
- position: absolute; 
- z-index: 2; 
+.bookimg{
+  width: 30%; 
+  margin-right: 50px;
 }
-
-.booktxt .absolute-img .bookingback{
-  width: 50%;
-  display: flex;
-  
-}
-
-.booktxt .absolute-img .bartender-img img{
-    width: 100%;
-}
-
-.booktxt .absolute-img .bookingback img{
-    width: 100%;
-} 
 
 /* from */
 

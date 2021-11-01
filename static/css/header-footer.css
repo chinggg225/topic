@@ -35,7 +35,6 @@ body{
     padding: 25px;
  }
 
-
    .menu a:hover{
       color: #b17ed4; 
       position: relative; 
@@ -48,6 +47,7 @@ body{
         .header-a img{
            display: none;
         }
+       
         .header-a{ 
             text-align: center;
             margin-top: 20px;
@@ -69,10 +69,9 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-wrap: wrap;
             }
             .menu a{ 
-                padding: 11px;
+                padding: 8px;
                 
              }
         
@@ -132,7 +131,6 @@ body{
    
             .footer-wrap .cc h5 {
                 color: rgba(201, 165, 212, 0.822);
-                background-color:black ;
                 text-align: center;
             }
 
