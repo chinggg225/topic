@@ -96,7 +96,39 @@
                 color: rgba(12, 9, 14, 0.74);
                 font-family:Verdana, Geneva, Tahoma, sans-serif;
                 line-height: 1.5;
+
             }
+
+     ul, li {
+                list-style: none;
+            }
+
+   .slider-wrap {
+              margin: 0 auto;
+              width: 1050px;
+            }
+
+    .slider {
+              position: relative;
+              margin: 50px auto;
+              height: 400px;
+           }
+    
+   .slider li {
+                 position: absolute;
+             }
+
+.slider li img {
+                  width: 100%;
+               }
+
+.arrow-r {
+         right: 80px;
+        }
+
+.arrow-l {
+         left: 80px;
+        } 
 
  @media (max-width: 1200px) {
     .slider-wrap{
