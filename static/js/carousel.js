@@ -1,7 +1,7 @@
 window.addEventListener("load", function() {
     var arr = [
        {   // 1
-             width: 450,
+            width: 450,
             top: 60,
              left: 0,
              opacity: 40,
