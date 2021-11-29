@@ -7,7 +7,7 @@
     #contaner div {
 	width:200px;
 	height:200px;
-	background:rgb(81, 52, 97);
+	background:rgb(114, 77, 133);
 	text-align:center;
 	color:rgba(255, 255, 255, 0.774);
 	font-size:16px;
@@ -24,7 +24,7 @@
 	cursor:pointer;
 	font-size:25px;
 	transform:scale(1.2) rotate(360deg);
-	background:rgba(207, 159, 219, 0.918);
+	background:rgba(201, 219, 159, 0.918);
 	color:rgb(57, 18, 70);
 }
 .ys {

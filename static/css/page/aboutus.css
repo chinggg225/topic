@@ -49,7 +49,7 @@
           .about-txt h3{
               line-height: 1.5;
               font-size: 22px;
-              text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+              /* text-shadow: 6px 6px 0px rgba(0,0,0,0.2); */
           }
 
           .about-txt h4{

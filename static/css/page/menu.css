@@ -1,11 +1,13 @@
 .menuimg img{
     width: 80%;
     max-width: 1200px;
+    opacity: 0.8;
 }
 
 .menu-wrap{
    display: flex;
-    max-width: 70%; 
+    max-width: 70%;  
+    width: 80%;
     margin: auto ;
     margin-bottom: 15px;
 }
@@ -14,7 +16,7 @@
     display : grid;
     grid-auto-flow: row ;
     grid-template-rows:  repeat(2,1fr);
-    gap:0px 10px;
+    gap:0px 30px;
     font-size: 20px; 
     text-align: center; 
     height: 100%; 
@@ -42,12 +44,16 @@ h2{
     background-color: rgb(189, 123, 147);
     opacity:0.5; 
     flex-grow: 1;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
     
 .menu-wrap .item .color2{
     background-color: rgba(190, 118, 127, 0.945);
     opacity:0.5;
     flex-grow: 1;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 
 } 
 
@@ -55,22 +61,27 @@ h2{
     background-color: rgb(85, 122, 192);
     opacity:0.5;
     flex-grow: 1;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+   
 }
 
 .menu-wrap .item .color4{
     background-color: rgb(125, 133, 173);
     opacity:0.5;
     flex-grow: 1;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 
 .menu-wrap .item h2{
-    color: rgb(54, 55, 71);
+    color: rgb(229, 230, 182);
     
 }
 
 .menu-wrap .item h3{
-    color: rgb(72, 76, 132);
+    color: rgb(40, 32, 43);
 }
 
 .price{
@@ -92,6 +103,20 @@ h2{
     color: rgba(99, 90, 96, 0.664);
   } 
 
+  .u{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .d{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .tit{
+      margin-bottom: 30px;
+  }
+
   @media (max-width: 1182px) {
     .menu-wrap{
          max-width: 80%; 
@@ -103,7 +128,7 @@ h2{
     grid-template-rows:  repeat(1,1fr);
   
 }
-    }
+    
 
 
 }

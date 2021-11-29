@@ -88,13 +88,14 @@ body{
 
     .footer-wrap .footer {
         max-width: 1200px;
+        width: 80%;
         margin-right: auto;
-        /* margin-left: auto; */
+         margin-left: auto; 
         display: grid;
         grid-template-columns: repeat(4,1fr);
-        justify-items: center;
-        align-items: center;
-        gap: 16px 16px;
+        justify-items: center;  
+        /* align-items: center;  */
+        gap: 5px 5px;
     }
 
         .footer-wrap .footer .footer-logo {
@@ -107,6 +108,11 @@ body{
 
         .footer-wrap .footer .icon {
             text-align: center;
+            padding-top: 10%;
+        }
+
+        .footer-wrap .footer .open {
+            padding-top: 10%;
         }
         
             .footer-wrap .footer .icon img {
@@ -115,14 +121,14 @@ body{
    
             .footer-wrap .footer .icon .icon-txt {
                 color:rgb(223, 205, 236); 
-                font-size: 21px;
+                font-size: 18px;
                 margin-bottom: 10px;
             
             }
 
             .footer-wrap .footer .open h2 {
                 color:rgb(223, 205, 236); 
-                font-size: 24px;
+                font-size: 19px;
             }
 
         .footer-wrap .cc {

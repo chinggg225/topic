@@ -2,6 +2,10 @@
     color: rgba(99, 90, 96, 0.664);
   }
 
+  .eventsbanner{
+ margin-top: 20px;
+  }
+
 .events-wrap{
     width: 80%;
     margin: auto;
@@ -13,19 +17,23 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: rgb(71, 62, 71);
+    background-color: rgb(161, 128, 161);
     padding: 30px;
+    border-radius: 8px;
+     margin-bottom: 30px; 
 }
 
  .events-reverse {
     flex-direction: row-reverse;
-    background-color: rgb(78, 73, 78);
+    background-color: rgb(141, 125, 150);
+    opacity: 0.9;
 }   
 
 .eventsimg{
     width: 40%;
     background-color: rgb(80, 78, 79);
     display: flex;
+    opacity: 0.9;
 }
 
 .eventsimg img{
@@ -54,7 +62,7 @@
 
 
 .eventstxt h3{
-    color: rgba(156, 148, 172, 0.966);
+    color: rgba(243, 239, 242, 0.692);
     margin: 0 auto 15px auto;
     font-size: 22px;
     font-style:oblique ;
@@ -119,6 +127,10 @@ th {
      display: flex;
      margin: auto;
      justify-content: center;
+ }
+
+ .footer-wrap{
+     margin-top: 40px;
  }
 
  @media (max-width: 948px) {
